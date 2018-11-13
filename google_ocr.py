@@ -15,7 +15,7 @@ def pil_image_to_base64(pil_image):
 def recognize_image(pil_image):
         str_encode_file = pil_image_to_base64(pil_image)
         str_url = "https://vision.googleapis.com/v1/images:annotate?key="
-        str_api_key = "AIzaSyCF-W0kkA8b0Uv259rEtRVXKzharVtdQR0"
+        str_api_key = "key"
         str_headers = {'Content-Type': 'application/json'}
         str_json_data = {
             'requests': [
